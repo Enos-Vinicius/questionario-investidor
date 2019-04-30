@@ -8,7 +8,7 @@ export class GlobalService {
 
     public mapPageGrade = { tela1: false, tela3: false, tela4: false };
     dadosForm;
-    url = 'https://api.myjson.com/bins/d5yeg';
+    url = 'https://api.myjson.com/bins/wxdig';
 
     constructor(
         private http: HttpClient
@@ -21,3 +21,4 @@ export class GlobalService {
 
     buscarForm() { return this.http.get<any>(this.url) };
 }
+

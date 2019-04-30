@@ -32,7 +32,6 @@ export class Tela4Component implements OnInit {
   }
 
   criarObjForm(data){
-    
     for(let k of data){
       for(let j of k.options){
         if(this.global.dadosForm[k.name] == j.key){
@@ -43,7 +42,10 @@ export class Tela4Component implements OnInit {
         }
       }
     }
-    
+  }
+
+  voltarHome(){
+    this.global.routePagGrade('tela1');
   }
 
 }
