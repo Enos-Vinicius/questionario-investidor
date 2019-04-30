@@ -1,0 +1,10 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+    background-color: #673ab7;
+    overflow: auto;
+}
+
+.conteudo{
+    height: 800px   ;
+}

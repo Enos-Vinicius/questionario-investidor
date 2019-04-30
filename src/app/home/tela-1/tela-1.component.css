@@ -1,0 +1,24 @@
+.btnHome {
+  margin: 8px;
+  width: 150px;
+}
+
+.iconeHeader{
+  font-size: 70px;
+  margin: 20px;
+  margin-left: -2px;
+}
+
+.txtRoxo {
+  color: #673ab7;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.btnClose {
+  background: white;
+  border: white;
+  cursor: pointer;
+}

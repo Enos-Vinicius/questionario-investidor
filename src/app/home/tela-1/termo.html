@@ -1,0 +1,23 @@
+
+<div class="close"  fxLayoutAlign="end end">
+    <button class="btnClose" [mat-dialog-close]="true" checked="false">X</button>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-between center">
+    <mat-dialog-content  fxLayoutAlign="space-between center">
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <h3 class="title txtRoxo">TERMO</h3><br>
+            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
+            e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja 
+            de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não 
+            só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente 
+            inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens 
+            de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração
+            eletrônica como Aldus PageMaker.
+        </div>
+    </mat-dialog-content>
+    <app-formulario
+        [fields]="campos"
+        [txtBtn]="'OK, ENTENDI'"
+        (onSubmit)="submitForm($event)"
+    ></app-formulario>
+</div>

@@ -1,0 +1,17 @@
+.iconeHeader{
+    font-size: 70px;
+    margin: 20px;
+    margin-left: -2px;
+  }
+
+  .txtRoxo {
+    color: #673ab7;
+    text-align: center;
+  }
+
+.classCard{
+    height: 600px;
+    width: 80%;
+    overflow: auto;
+  }
+  
