@@ -10,24 +10,32 @@ import { createTemplateData } from '@angular/core/src/view/refs';
 export class Tela4Component implements OnInit {
   
   arrDadosForm = [];
+  cardTamanho  = '700px'; 
+  loadDados    = false;  
 
   constructor(
     private global: GlobalService
   ) {}
 
   ngOnInit(){
+    if(this.global.dadosForm.length == 0){
+      this.cardTamanho  = '300px';
+    }
     this.buscarDadosForm();
   
   }
 
   buscarDadosForm(){
+    this.loadDados = true;
     this.global.buscarForm()
       .subscribe(
       data => {
         this.criarObjForm(data.data);
+        this.loadDados = false;
       },
       err => {
         console.log("ERROr: ", err);
+        this.loadDados  = false;
       })
   }
 

@@ -1,4 +1,4 @@
-<mat-card class="classCard">
+<mat-card class="classCard" [ngStyle]="{'height': cardTamanho}">
     <mat-card-header fxLayoutAlign="center center">
         <i class="material-icons iconeHeader txtRoxo">done_outline</i>
     </mat-card-header>
@@ -7,8 +7,9 @@
       <p>Obrigado por preencher o formulário, em breve enviaremos informações de investimento!</p>
 
       <h5 *ngIf="!global.dadosForm">Nenhum formulário preenchido!</h5>
-      
-
+      <div *ngIf="loadDados">
+        <mat-spinner></mat-spinner>
+      </div>
       <div *ngIf="arrDadosForm.length > 0">
         <h5> DADOS DO FORMULÁRIO</h5>
         <div *ngFor="let key of this.arrDadosForm">
@@ -16,6 +17,7 @@
             <p>Resposta: {{key.resposta}}</p>
         </div>
       </div>
+      <br><br>
       <button class="primary" type="submit" mat-stroked-button color="primary" (click)="voltarHome()">VOLTAR</button>
     </mat-card-content>
 </mat-card>

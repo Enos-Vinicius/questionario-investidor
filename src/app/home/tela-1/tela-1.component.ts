@@ -31,6 +31,7 @@ export class TermoComponent {
 
   submitForm(event){
     this.dialog.closeAll();
+    this.global.dadosForm = [];
     this.global.routePagGrade('tela4');
   }
 
