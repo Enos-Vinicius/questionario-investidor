@@ -7,7 +7,7 @@ import { FormGroup } from '@angular/forms';
     <div class="form-table" [formGroup]="form" style="margin-top: -30px">
         <mat-radio-group formControlName="{{field.name}}" >
           <div fxLayoutAlign="space-around center">
-          <mat-radio-button style="padding: 10px;" *ngFor="let opt of field.options" value="{{opt.key}}" >{{opt.label}}</mat-radio-button>
+          <mat-radio-button color="primary" style="padding: 10px;" *ngFor="let opt of field.options" value="{{opt.key}}" >{{opt.label}}</mat-radio-button>
           </div>
         </mat-radio-group>
     </div>
