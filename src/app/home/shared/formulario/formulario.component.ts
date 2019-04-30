@@ -50,7 +50,6 @@ export class FormularioComponent implements OnInit {
         }
       }
       this.form = new FormGroup(fieldsCtrls);
-      console.log(this.form);
       
     }
 

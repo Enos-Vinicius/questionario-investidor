@@ -10,20 +10,22 @@ import { GlobalService                } from '../shared/service/global.service'
     
     campos: any[] = [];
 
-    //https://api.myjson.com/bins/d5yeg
     constructor(
       private global: GlobalService
     ) {}
     
     ngOnInit(){
-      this.global.buscarForm()
-      .subscribe(
-        data => {
-          this.campos = data.data;
-        },
-        err => {
-          console.log("ERROr: ", err);
-        })
+
+      setTimeout(() => {
+        this.global.buscarForm()
+        .subscribe(
+          data => {
+            this.campos = data.data;
+          },
+          err => {
+            console.log("ERROr: ", err);
+          })
+      }, 1000);
     }
 
     submitForm(event){

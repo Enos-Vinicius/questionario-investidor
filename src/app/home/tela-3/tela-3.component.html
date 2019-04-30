@@ -1,7 +1,10 @@
-<mat-card class="conteudo" fxFlex="80" fxLayout="column">
+<mat-card *ngIf="campos.length == 0" fxLayoutAlign="center center">
+    <mat-spinner></mat-spinner>
+</mat-card>
+
+<mat-card *ngIf="campos.length > 0" class="conteudo" fxFlex="80" fxLayout="column">
     <h3 class="title txtRoxo">PERFIL DO INVESTIDOR - QUESTIONÁRIO</h3>
     <app-formulario
-        *ngIf="campos.length > 0"
         [fields]="campos"
         [txtBtn]="'ENVIAR'"
         (onSubmit)="submitForm($event)"

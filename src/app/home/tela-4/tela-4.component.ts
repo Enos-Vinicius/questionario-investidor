@@ -17,8 +17,7 @@ export class Tela4Component implements OnInit {
 
   ngOnInit(){
     this.buscarDadosForm();
-    console.log("DADOS FORM: ", this.global.dadosForm);
-    
+  
   }
 
   buscarDadosForm(){
@@ -44,7 +43,6 @@ export class Tela4Component implements OnInit {
         }
       }
     }
-    console.log("INFO: ", this.arrDadosForm);
     
   }
 
